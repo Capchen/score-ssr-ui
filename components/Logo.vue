@@ -1,4 +1,6 @@
 <template>
+<div>
+  <p>{{needValue}}</p>
   <svg class="NuxtLogo" width="245" height="180" viewBox="0 0 452 342" xmlns="http://www.w3.org/2000/svg">
     <g fill="none" fill-rule="evenodd">
       <path
@@ -16,7 +18,13 @@
       />
     </g>
   </svg>
+</div>
 </template>
+<script>
+export default {
+  props: ['needValue']
+}
+</script>
 <style>
 .NuxtLogo {
   animation: 1s appear;

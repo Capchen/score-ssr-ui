@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <logo />
+      <logo :needValue="va" />
       <h1 class="title">
         score-app
       </h1>
@@ -34,6 +34,11 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data() {
+    return {
+      va: 1
+    }
   }
 }
 </script>
